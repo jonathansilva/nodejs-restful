@@ -1,0 +1,21 @@
+{
+    "name": "API",
+    "version": "1.0.0",
+    "description": "API RESTful in Node.js",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon src/app.js"
+    },
+    "dependencies": {
+        "@hapi/boom": "^9.0.0",
+        "@hapi/joi": "^17.1.0",
+        "bcrypt": "^3.0.7",
+        "dotenv": "^8.2.0",
+        "filter-files": "^0.4.0",
+        "jsonwebtoken": "^8.5.1",
+        "knex": "^0.20.4",
+        "mysql": "^2.18.1",
+        "restify": "^8.5.1",
+        "restify-cors-middleware": "^1.1.1"
+    }
+}
