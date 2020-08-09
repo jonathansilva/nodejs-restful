@@ -7,6 +7,7 @@ const verifyEmail = async (db, email) => {
     if (!result) {
         return Promise.reject(new Error('Email not found'))
     }
+    
     return result
 }
 

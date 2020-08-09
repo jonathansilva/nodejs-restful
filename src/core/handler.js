@@ -30,6 +30,7 @@ const makeHandler = ( handler, options = {} ) => {
         } catch (error) {
             console.error(error)
             const errorResponse = parseError(error)
+
             res.json(errorResponse.statusCode, errorResponse)
         }
     }

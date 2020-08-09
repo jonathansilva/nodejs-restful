@@ -4,6 +4,7 @@ const ensureBoom = error => {
     if (error.isJoi) {
         return boom.boomify(error, { statusCode: 400 })
     }
+
     return boom.isBoom(error) ? error : boom.boomify(error)
 }
 

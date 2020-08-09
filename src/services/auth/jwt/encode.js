@@ -9,6 +9,7 @@ const encode = data => {
                 reject(error)
                 return
             }
+
             resolve(token)
         })
     })
