@@ -20,7 +20,7 @@ const handler = async ({ payload, services, authInfo }) => {
             data: 'Successfully updated'
         }
     } catch(error) {
-        console.error(error)
+        //console.error(error)
         return Promise.reject(boom.badRequest('Error updating, please try again'))
     }
 }

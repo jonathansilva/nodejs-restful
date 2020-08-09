@@ -21,7 +21,7 @@ const handler = async ({ payload, services }) => {
             data: token
         }
     } catch(error) {
-        console.error(error)
+        //console.error(error)
         return Promise.reject(boom.badRequest('Incorrect phone and email combination'))
     }
 }

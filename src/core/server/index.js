@@ -1,11 +1,9 @@
 const cors = require('./cors')
 const restify = require('restify')
 const app = restify.createServer()
-
+const path = require('path')
 const token = require('../../middlewares/token/token-assert')
 const register = require('./routes/register-routes-by-path')
-
-const dirName = __dirname + '/../../routes'
 
 // CORS
 app.pre(cors.preflight)
@@ -20,6 +18,6 @@ app.use(restify.plugins.bodyParser())
 app.use(token)
 
 // Load all routes
-register(app, dirName)
+register(app, path.join(__dirname, '/../../routes'))
 
 module.exports = app

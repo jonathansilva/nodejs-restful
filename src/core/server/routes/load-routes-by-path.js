@@ -9,6 +9,7 @@ const routeFiles = dirName => {
         if (isRouteFile(fp)) {
             return true
         }
+
         return isDir.sync(path.join(dir, fp))
     }, true)
 }

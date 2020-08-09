@@ -19,6 +19,7 @@ const getHandlers = route => {
     if (useWrap) {
         handlers = applyWrap(handlers, schema)
     }
+
     return handlers
 }
 

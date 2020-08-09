@@ -11,6 +11,7 @@ const decode = token => {
                 reject(error)
                 return
             }
+
             resolve(decoded)
         })
     })

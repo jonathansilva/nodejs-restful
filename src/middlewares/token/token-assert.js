@@ -14,7 +14,7 @@ const tokenAssert = async (req, res, next) => {
 
         next()
     } catch (error) {
-        console.error(error)
+        //console.error(error)
         return Promise.reject(boom.badRequest('Invalid authentication'))
     }
 }
